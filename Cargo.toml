@@ -1,0 +1,20 @@
+[package]
+name = "visualizador-mcnp"
+version = "0.1.0"
+edition = "2021"
+description = "Visualizador de geometria para códigos de transporte de partículas (MCNP e PHITS)"
+
+[dependencies]
+eframe = "0.31"
+glam = "0.29"
+rayon = "1.10"
+rfd = "0.15"
+png = "0.17"
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+
+# O ray casting fica inutilizável sem otimização, mesmo em debug.
+[profile.dev]
+opt-level = 2

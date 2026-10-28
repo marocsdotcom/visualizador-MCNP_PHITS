@@ -1,0 +1,29 @@
+# Rust / Cargo
+target/
+
+# Arquivos compactados
+*.rar
+*.zip
+*.7z
+
+# Outputs grandes de simulações
+*.out
+
+# Arquivos runtime grandes do MCNP
+runtpe
+runtpf
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Variáveis de ambiente / segredos
+.env
+.env.*
+
+# IDE / sistema
+.vscode/
+.DS_Store
+Thumbs.db
